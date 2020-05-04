@@ -1,6 +1,6 @@
-@media (min-width: 1281px) {
+@media (min-width: 1280px) {
 
-    main {
+    .main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
