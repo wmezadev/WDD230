@@ -1,0 +1,31 @@
+/* 
+  ##Device = Tablets, Ipads 
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    nav li {
+        margin-right: 1rem;
+    }
+
+    nav li:last-child {
+        margin-right: 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        min-width: 620px;
+        max-width: 720px;
+        flex-wrap: wrap;
+    }
+
+    .cards .card {
+        flex: 0 0 50%;
+    }
+}

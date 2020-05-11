@@ -1,0 +1,31 @@
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px
+*/
+
+@media (min-width: 1025px) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    nav li {
+        margin-right: 1rem;
+    }
+
+    nav li:last-child {
+        margin-right: 0;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cards .card {
+        flex: 0 0 33.333333%;
+    }
+}

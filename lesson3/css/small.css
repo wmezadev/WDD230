@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+main {
+    background-color: #4C4AFF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FB5607;
+    color: white;
+}
+
+footer {
+    background: #167973;
+}
+
+header h1 {
+    font-family: 'Kodchasan', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    background-color: #2E6BDF;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: white;
+}
+
+.card {
+    text-align: center;
+    width: 320px;
+    border: white dashed 2px;
+    margin: 1rem 0 0;
+    padding: 1rem;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cloudy-logo{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    display: table;
+    border: 2px dashed white;
+}
+
+td, th{
+    border: 2px dashed white;
+}
+
+.container-table {
+    margin-top: 1rem;
+}
+
+.primary-background {
+    background-color: #FB5607;
+    text-align: center;
+}
+
+.secondary-background {
+    background-color: #4c4aff;
+    text-align: center;
+}
+
+.accent1-background {
+    background-color: #167973;
+    text-align: center;
+}
+
+.accent2-background {
+    background-color: #2E6BDF;
+    text-align: center;
+}
