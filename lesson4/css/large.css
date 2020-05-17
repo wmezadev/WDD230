@@ -24,13 +24,4 @@
         margin-right: 0;
     }
 
-    .cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .cards .card {
-        flex: 0 0 33.333333%;
-    }
 }
