@@ -178,3 +178,8 @@ td, th{
     flex-direction: column-reverse;
     align-items: center;
 }
+
+#banner-top{
+    display: none;
+    text-align: center;
+}
