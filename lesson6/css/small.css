@@ -94,6 +94,10 @@ a {
     display: flex;
     flex-direction: column;
 }
+.card-content img {
+    max-width: 300px;
+    align-self: center;
+}
 
 .cloudy-logo{
     display: flex;
