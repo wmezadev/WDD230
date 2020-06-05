@@ -1,0 +1,52 @@
+/* 
+  ##Device = Tablets, Ipads 
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    nav li {
+        margin-right: 1rem;
+        display: flex;
+    }
+    
+    nav li:first-child {
+        display: none;
+    }
+
+    nav li:last-child {
+        margin-right: 0;
+    }
+
+    .weather-summary {
+        top: 35px;
+        left: 35px;
+        padding: 1rem 2.5rem;
+        line-height: 1;
+        max-height: 100%;
+    }
+
+    .card-content {
+        flex-direction: row;
+    }
+
+    .card-content img {
+        margin-bottom: -3rem;
+    }
+
+    .social-link img{
+        width: 50px;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: row;
+        align-items: unset;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}
