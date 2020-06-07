@@ -8,28 +8,35 @@
     margin: auto;
 }
 
-picture {
+figure {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-picture img[data-src] {
-    filter: blur(0.2rem);
-}
-
-picture img {
+figure img {
     filter: blur(0rem);
     transition: filter 0.75s;
     border: 2px white dashed;
     margin: 10px 0;
+    border-top-right-radius: 10%;
 }
 
-picture img:hover {
-    transition: all 175ms 275ms;
+figure img[data-src] {
+    filter: blur(0.2rem);
+}
+
+figure img:hover {
+    transform: translate(-2px, -2px);
+    transition: all 150ms 150ms;
     box-shadow: 8px 8px 0 0 #fff;
     margin: 10px 0;
     cursor: pointer;
+}
+
+figcaption {
+    text-align: center;
 }
 
 h1 {
