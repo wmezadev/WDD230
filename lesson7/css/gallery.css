@@ -1,0 +1,45 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    scroll-snap-align: start;
+    gap: 1rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+picture img[data-src] {
+    filter: blur(0.2rem);
+}
+
+picture img {
+    filter: blur(0rem);
+    transition: filter 0.75s;
+    border: 2px white dashed;
+    margin: 10px 0;
+}
+
+picture img:hover {
+    transition: all 175ms 275ms;
+    box-shadow: 8px 8px 0 0 #fff;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+/* overwrite small.css */
+main {
+    display: block;
+    flex-direction: unset;
+}
