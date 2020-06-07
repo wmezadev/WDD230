@@ -13,8 +13,6 @@ body {
 main {
     background-color: #4C4AFF;
     color: white;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     padding-bottom: 1rem;
 }
@@ -186,4 +184,52 @@ td, th{
 #banner-top{
     display: none;
     text-align: center;
+}
+
+.grid-gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    scroll-snap-align: start;
+    gap: 1rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-gallery-container figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-gallery-container figure img {
+    filter: blur(0rem);
+    transition: filter 0.75s;
+    border: 2px white dashed;
+    margin: 10px 0;
+    border-top-right-radius: 10%;
+}
+
+.grid-gallery-container figure img[data-src] {
+    filter: blur(0.2rem);
+}
+
+.grid-gallery-container figure img:hover {
+    transform: translate(-2px, -2px);
+    transition: all 150ms 150ms;
+    box-shadow: 8px 8px 0 0 #fff;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.grid-gallery-container figcaption {
+    display: none;
+    text-align: center;
+}
+
+.title-center {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1rem;
 }
