@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: #4C4AFF;
+    color: white;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+
+header,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #FB5607;
+    color: white;
+}
+
+footer {
+    background: #167973;
+}
+
+header h1 {
+    font-family: 'Kodchasan', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+header .motto {
+    font-style: italic;
+    color: black;
+}
+
+nav {
+    background-color: #2E6BDF;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+nav li {
+    display: none;
+}
+
+nav li:first-child {
+    display: block;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+}
+
+a {
+    color: white;
+}
+
+.card {
+    text-align: left;
+    border: white dashed 2px;
+    margin: 4rem 0;
+    padding: 1rem;
+    max-width: 900px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+.card-content img {
+    max-width: 300px;
+    align-self: center;
+}
+
+.cloudy-logo{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    display: table;
+}
+
+td, th{
+    width: 150px;
+    border: 2px dashed white;
+}
+
+.container-table {
+    margin-top: 1rem;
+}
+
+.primary-background {
+    background-color: #FB5607;
+    text-align: center;
+}
+
+.secondary-background {
+    background-color: #4c4aff;
+    text-align: center;
+}
+
+.accent1-background {
+    background-color: #167973;
+    text-align: center;
+}
+
+.accent2-background {
+    background-color: #2E6BDF;
+    text-align: center;
+}
+
+.expand-menu li {
+    display: block;
+}
+
+.expand-menu li:first-child a{
+    color: #111111;
+    text-decoration: none;
+}
+
+.banner-hero{
+    position: relative;
+}
+
+.banner-hero img {
+    width: 100%;
+}
+
+.weather-summary {
+    position: absolute;
+    margin-right: 35px;
+    top: 20px;
+    left: 20px;
+    background: #167973;
+    border-top: 2px dashed #ffffff;
+    border-left: 2px dashed #ffffff;
+    padding: 10px;
+    box-shadow: 4px 4px 0 0 #f4f4f4;
+    opacity: .90;
+    max-height: 217px;
+    line-height: .5;
+}
+
+#forecast {
+    display: none;
+}
+
+.social-link img{
+    width: 25px;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#banner-top{
+    display: none;
+    text-align: center;
+}
+
+.grid-gallery-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    scroll-snap-align: start;
+    gap: 1rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.grid-gallery-container figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-gallery-container figure img {
+    filter: blur(0rem);
+    transition: filter 0.75s;
+    border: 2px white dashed;
+    margin: 10px 0;
+    border-top-right-radius: 10%;
+}
+
+.grid-gallery-container figure img[data-src] {
+    filter: blur(0.2rem);
+}
+
+.grid-gallery-container figure img:hover {
+    transform: translate(-2px, -2px);
+    transition: all 150ms 150ms;
+    box-shadow: 8px 8px 0 0 #fff;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.grid-gallery-container figcaption {
+    display: none;
+    text-align: center;
+}
+
+.title-center {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 1rem;
+}
