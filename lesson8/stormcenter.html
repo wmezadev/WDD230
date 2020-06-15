@@ -64,23 +64,10 @@
                         <option value="Tornado">
                     </datalist>
                 </label>
-                <label class="stormy" for="storming">Storm Severity
-                    <input class="stormy" type="range" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                    <span id="ratingvalue">1</span>
-                    <datalist id="tickmarks">
-                        <option value="0"></option>
-                        <option value="1"></option>
-                        <option value="2"></option>
-                        <option value="3"></option>
-                        <option value="4"></option>
-                        <option value="5"></option>
-                        <option value="6"></option>
-                        <option value="7"></option>
-                        <option value="8"></option>
-                        <option value="9"></option>
-                        <option value="10"></option>
-                    </datalist>
+                <label for="storming">Storm Severity
+                    <input type="range" name="storming" id="storming" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                 </label> 
+                <span id="ratingvalue">1</span>
                 <label for="stormRegion">Storm Region
                     <select name="stormRegion" id="stormRegion">
                         <option value="" disabled selected>Select Region...</option>
@@ -103,7 +90,7 @@
                     <input type="radio" id="inDangerLevel3" name="dangerLevel" value="Maybe"> Maybe
                 </label> 
                 <br>
-                <label for="textarea"> Please share any additional information:
+                <label for="comments"> Please share any additional information:
                     <textarea id="comments" name="comment" rows="4" cols="50"></textarea>
                 </label>
                 <input class="btn btn-primary" type="submit" value="Report A Storm">
