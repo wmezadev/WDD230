@@ -81,6 +81,10 @@ a {
     color: white;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .card {
     text-align: left;
     border: white dashed 2px;
@@ -266,4 +270,28 @@ select {
 }
 input[type="range"]{
     width: 100%;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    min-width: 100px;
+    margin: 0;
+    padding: 5px 20px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    letter-spacing: 1px;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+    text-decoration: none;
+    max-height: 2.25rem;
+    font-size: 1.15rem;
+    box-shadow: 4px 4px 0 0 #000;
+}
+
+.btn-primary {
+    background-color: #167973;
+    color: #fff;
 }

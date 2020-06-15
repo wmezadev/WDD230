@@ -33,74 +33,80 @@
     </nav>
     <main>
         <h1 class="title-center">Report a Storm</h1>
-        <form method="GET" action="thanks.html" class="report-form">
+        <form method="GET" action="./thanks.html" class="report-form">
             <fieldset>
-                <legend class="contact">Contact Information</legend>
-                    <label class="top">Full Name*
-                        <input   type="text"  name="fullName" placeholder="Will Power" pattern="[A-Za-z]{5}*" required></label>
-                    <label class="top">Email
-                        <input type="email"  name="email" placeholder="user@email.com" minlength="3" maxlength="64" required></label>
-                    <label class="top" >Phone Number*
-                        <input type="tel"  name="phone" placeholder="###-###-####" required></label>
-                    <label class="top" for="zipcode">Zipcode*
-                        <input type="number" id="zipCode" name="zipcode" placeholder="#####" required></label>
+                <legend>Contact Information</legend>
+                <label for="fullName">Full Name*
+                    <input type="text" name="fullName" id="fullName" placeholder="William Meza" pattern="[A-Za-z]{5}*" required>
+                </label>
+                <label for="email">Email
+                    <input type="email" name="email" id="email" placeholder="user@email.com" minlength="3" maxlength="64" required>
+                </label>
+                <label for="phone">Phone Number*
+                    <input type="tel" name="phone" id="phone" placeholder="###-###-####" required>
+                </label>
+                <label for="zipCode">Zipcode*
+                    <input type="number" name="zipCode" id="zipCode" placeholder="#####" required>
+                </label>
             </fieldset>
             <fieldset>
-                <legend class="storm">Storm Details</legend>
-                    <label class="top" >Today's Date
-                        <input type="date"  name="stormdate" value="2020-06-11" min="2020-01-01" max="2100-01-01"></label>
-                    <label class="top">Storm Type
-                        <input type="text" list="storms" name="storm"></label>
-                            <datalist id="storms">
-                                <option value="Flash Flood">
-                                <option value="Hail">
-                                <option value="Hurricane">
-                                <option value="Thunder Storm">
-                                <option value="Tornado">
-                            </datalist>
-                     <label class="top" class="stormy" for="storming">Storm Severity
-                         <input class="stormy" type="range" min="0" max="10">
-                         <span id="ratingvalue">1</span>
-                     </label> 
-                            <datalist id="tickmarks">
-                                <option value="0"></option>
-                                <option value="1"></option>
-                                <option value="2"></option>
-                                <option value="3"></option>
-                                <option value="4"></option>
-                                <option value="5"></option>
-                                <option value="6"></option>
-                                <option value="7"></option>
-                                <option value="8"></option>
-                                <option value="9"></option>
-                                <option value="10"></option>
-                            </datalist>
-                    <label class="top">Storm Region
-                        <select></label>
-                            <option value=""disabled selected>Select Region</option>
-                            <option value="Preston"> Preston </option>
-                            <option value="Soda Springs"> Soda Springs </option>
-                            <option value="Fish Haven"> Fish Haven </option>
-                        </select> 
+                <legend>Storm Details</legend>
+                <label for="stormdate">Today's Date
+                    <input type="date" name="stormdate" id="stormdate" value="2020-06-11" min="2020-01-01" max="2100-01-01">
+                </label>
+                <label for="storm">Storm Type
+                    <input type="text" list="storms" name="storm" id="storm">
+                    <datalist id="storms">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunder Storm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+                <label class="stormy" for="storming">Storm Severity
+                    <input class="stormy" type="range" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">1</span>
+                    <datalist id="tickmarks">
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                </label> 
+                <label for="stormRegion">Storm Region
+                    <select name="stormRegion" id="stormRegion">
+                        <option value="" disabled selected>Select Region...</option>
+                        <option value="Preston"> Preston </option>
+                        <option value="Soda Springs"> Soda Springs </option>
+                        <option value="Fish Haven"> Fish Haven </option>
+                    </select> 
+                </label>
             </fieldset>
             <fieldset >
-                <legend class="additionalComments">Additional Information</legend>
-                <div class="danger">
-                    <p>In Danger Level</p>
-                        <label for="inDangerLevel">
-                            <input type="radio" id="inDangerLevel" name="dangerLevel" value="Yes"> Yes
-                        </label><br>
-                        <label for="inDangerLevel2">
-                            <input type="radio" id="inDangerLevel2" name="dangerLevel" value="No"> No
-                        </label><br>
-                        <label for="inDangerLevel3">
-                            <input type="radio" id="inDangerLevel3" name="dangerLevel" value="Maybe"> Maybe
-                        </label> 
-                </div>
-                    <label for="textarea"> Please share any additional information:
-                        <textarea id="comments" name="comment" rows="4" cols="50"> </textarea>
-                    </label>
-                    <button type="submit">Report A Storm</button>
+                <legend>Additional Information</legend>
+                <p>In Danger Level</p>
+                <label for="inDangerLevel">
+                    <input type="radio" id="inDangerLevel" name="dangerLevel" value="Yes"> Yes
+                </label>
+                <label for="inDangerLevel2">
+                    <input type="radio" id="inDangerLevel2" name="dangerLevel" value="No"> No
+                </label>
+                <label for="inDangerLevel3">
+                    <input type="radio" id="inDangerLevel3" name="dangerLevel" value="Maybe"> Maybe
+                </label> 
+                <br>
+                <label for="textarea"> Please share any additional information:
+                    <textarea id="comments" name="comment" rows="4" cols="50"></textarea>
+                </label>
+                <input class="btn btn-primary" type="submit" value="Report A Storm">
             </fieldset>
         </form>
     </main>
@@ -114,11 +120,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/lazyload.js"></script>
     <script>
-      WebFont.load({
-        google: {
-          families: ['Comfortaa', 'Kodchasan' ] 
+        WebFont.load({
+            google: {
+                families: ['Comfortaa', 'Kodchasan' ] 
+            }
+        });
+        function adjustRating(rating) {
+            document.getElementById("ratingvalue").innerHTML = rating;
         }
-      });
     </script>
 </body>
 
