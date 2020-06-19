@@ -15,16 +15,14 @@ for (let i = 0; i < prophets.length; i++) {
     let bDay = document.createElement('p');
     let bPlace = document.createElement('p');
     let image = document.createElement('img');
-    let alt = document.createElement('alt');
 
-    alt.setAttribute('alt', prophets[i].name + prophets[i].lastname + ' - ' + prophets[i].order);
     image.setAttribute('src', prophets[i].imageurl);
+    image.setAttribute('alt', `${prophets[i].name} ${prophets[i].lastname} - ${prophets[i].order}`);
     h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
     bDay.textContent = 'Birthdate: ' + prophets[i].birthdate;
     bPlace.textContent = 'Birthplace: ' + prophets[i].birthplace;
 
     card.appendChild(h2);
-    card.appendChild(alt);
     card.appendChild(bDay);
     card.appendChild(bPlace);
     card.appendChild(image);
