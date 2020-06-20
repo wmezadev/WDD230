@@ -61,4 +61,14 @@
     .towns article div{
         text-align: left;
     }
+
+    .main-story {
+        flex-direction: row;
+        align-items: unset;
+        text-align: unset;
+    }
+    
+    .story-content {
+        padding-left: 2rem;
+    }
 }

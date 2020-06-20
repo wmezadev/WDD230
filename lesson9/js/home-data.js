@@ -7,9 +7,8 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject['towns'];
-    // console.table(jsonObject);  // temporary checking for valid response and data parsing
-
     const special = towns.filter(town => (town.name == 'Preston') || (town.name == 'Fish Haven') || (town.name == 'Soda Springs'));
+    
     special.forEach(town => {
       let townContainer = document.createElement('div');
       let articleText = document.createElement('div');
@@ -30,7 +29,6 @@ fetch(requestURL)
       population.textContent = 'Population: ' + town.currentPopulation;
       rainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
     
-
       articleText.appendChild(h2);
       articleText.appendChild(motto);
       articleText.appendChild(year);

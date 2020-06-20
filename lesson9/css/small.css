@@ -313,3 +313,12 @@ input[type="range"]{
     max-width: 100%;
     padding: 10px;
 }
+
+.main-story {
+    display: flex;
+    flex-direction: column;
+    max-width: 1040px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
