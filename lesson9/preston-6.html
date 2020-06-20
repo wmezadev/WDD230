@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Site Planning Document</title>
+    <meta name="description" content="Site about the weather report" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <aside id="banner-top">
+      Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+    <header>
+      <img src="images/logo-cloudy.png" alt="logo cloudy website">
+      <h1>Cloudy Web</h1>
+      <span class="motto">The weather report, the fun way!</span>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#!" id="navBtn">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" class="active">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="banner-hero">
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>Temperature: <span id="temperature">50</span>°</p>
+                <p>Wind Chill: <span id="chillWind"></span>°F</p>
+                <p>Humidity: 67%</p>
+                <p>Precipitation: 58%</p>
+                <p>Wind Speed: <span id="wind">9</span>MPH</p>
+            </section>
+            <picture>
+              <source srcset="images/wdd230-image-franklin-small.jpg" media="(max-width: 550px)">
+              <source srcset="images/wdd230-image-franklin-medium.jpg" media="(max-width: 950px)"> 
+              <img src="images/wdd230-image-franklin-large.jpg" alt="franklin landscape">        
+            </picture>
+        </div>
+        <h3>5 Day Forecast</h3>
+        <table id="forecast">
+            <tbody>
+                <tr>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                </tr>
+                <tr>
+                    <td id="fri"><img src="images/sun-icon.svg" alt="sun" width="60" height="60">76°F</td>
+                    <td id="sat"><img src="images/sun-icon.svg" alt="sun" width="60" height="60">79°F</td>
+                    <td id="sun"><img src="images/rain-icon.svg" alt="rain" width="60" height="60">80°F</td>
+                    <td id="mon"><img src="images/partly-cloudy.svg" alt="partly cloudy" width="60" height="60">72°F</td>
+                    <td id="tue"><img src="images/partly-cloudy.svg" alt="partially cloudy" width="60" height="60">71°F</td>
+                </tr>
+            </tbody>
+        </table>
+        <article class="card">
+            <h2>kids just wanna have fun</h2>
+            <div class="card-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dignissimos harum consequatur alias architecto, eius voluptates nobis inventore libero exercitationem laboriosam quod nesciunt enim deserunt doloribus ea. Reiciendis, obcaecati laboriosam?</p>
+                <img src="images/kids-playing-rain.jpg" alt="kids playing"/>
+            </div>
+        </article>
+        <div class="contact-info">
+          <div class="col-1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.997557041211!2d-111.78544368416173!3d43.81441007911608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03dc48a5cf%3A0x1e5534d3c38ef412!2sBrigham%20Young%20University-Idaho!5e0!3m2!1sen!2sco!4v1590388293319!5m2!1sen!2sco" width="300" height="250" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <div class="col-2">
+            <p>Cloudy Web<br>
+              633 Washington St.<br>
+              Montpelier, ID 83254
+            </p>
+            <p>☎ 888.867.5309<br>
+              <a href="mailto:contact@cloudyweb.info" target="_blank" rel="nofollow">contact@cloudyweb.info</a>
+            </p>
+            <a class="social-link" rel="nofollow" target="_blank" href="https://www.facebook.com"> <img class="icon" src="images/social-icons/facebook-icon.svg" alt="Facebook logo"></a>
+            <a class="social-link" rel="nofollow" target="_blank" href="https://www.twitter.com"> <img class="icon" src="images/social-icons/twitter-icon.svg" alt="Twitter logo"></a>
+            <a class="social-link" rel="nofollow" target="_blank" href="https://www.youtube.com"> <img class="icon" src="images/social-icons/youtube-icon.svg" alt="YouTube logo"></a>
+          </div>
+        </div>
+    </main>
+    <footer class="footer">
+      <p>
+          &copy; 2020 | William E. Meza | Colombia | <a href="https://byui.edu/" target="_blank">BYUI Online Learning</a>
+      </p>
+      <p class="last-update" id="currentDate"></p>
+    </footer>
+    <script src="js/cal-windchill.js"></script>
+    <script src="js/last-modified.js" ></script>
+    <script src="js/responsive-menu.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Comfortaa', 'Kodchasan' ] 
+        }
+      });
+    </script>
+  </body>
+</html>
