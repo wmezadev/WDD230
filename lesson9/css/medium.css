@@ -49,4 +49,16 @@
         justify-content: space-evenly;
         width: 100%;
     }
+
+    .towns article {
+        max-width: unset;
+        margin: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    .towns article div{
+        text-align: left;
+    }
 }

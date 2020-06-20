@@ -295,3 +295,21 @@ input[type="range"]{
     background-color: #167973;
     color: #fff;
 }
+
+.towns {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.towns article {
+    max-width: 320px;
+    border: dashed white 2px;
+    margin: auto;
+}
+
+.towns article img {
+    max-width: 100%;
+    padding: 10px;
+}

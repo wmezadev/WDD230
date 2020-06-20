@@ -11,6 +11,8 @@ fetch(requestURL)
 
     const special = towns.filter(town => (town.name == 'Preston') || (town.name == 'Fish Haven') || (town.name == 'Soda Springs'));
     special.forEach(town => {
+      let townContainer = document.createElement('div');
+      let articleText = document.createElement('div');
       let townArticle = document.createElement('article');
       let h2 = document.createElement('h2');
       let motto = document.createElement('h3');
@@ -18,25 +20,26 @@ fetch(requestURL)
       let population = document.createElement('p');
       let rainfall = document.createElement('p');
       let image = document.createElement('img');
-      let alt = document.createElement('alt');
 
-      alt.setAttribute('alt', town.name);
       image.setAttribute('src', `images/${town.photo}`);
+      image.setAttribute('alt', town.name);
       h2.textContent = town.name;
       motto.innerHTML = town.motto;
       if (town.name == 'Fish Haven') motto.innerHTML += "<br>";
       year.textContent = 'Year Founded: ' + town.yearFounded;
       population.textContent = 'Population: ' + town.currentPopulation;
       rainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
+    
 
-      townArticle.appendChild(h2);
-      townArticle.appendChild(motto);
-      townArticle.appendChild(year);
-      townArticle.appendChild(population);
-      townArticle.appendChild(rainfall);
+      articleText.appendChild(h2);
+      articleText.appendChild(motto);
+      articleText.appendChild(year);
+      articleText.appendChild(population);
+      articleText.appendChild(rainfall);
+      townArticle.appendChild(articleText);
       townArticle.appendChild(image);
-      townArticle.appendChild(alt);
+      townContainer.appendChild(townArticle);
 
-      document.querySelector('div.towns').appendChild(townArticle);
+      document.querySelector('div.towns').appendChild(townContainer);
     });
   });
