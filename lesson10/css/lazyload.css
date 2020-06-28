@@ -1,0 +1,17 @@
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+picture img[data-src] {
+    filter: blur(0.2rem);
+}
+
+picture img {
+    filter: blur(0rem);
+    transition: filter 0.75s;
+    border: 2px white dashed;
+    margin: 10px 0;
+}

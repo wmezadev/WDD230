@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report a Storm</title>
+    <meta name="description" content="Report a Storm form">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css"/>
+    <link rel="stylesheet" href="css/medium.css"/>
+    <link rel="stylesheet" href="css/large.css"/>
+</head>
+<body>
+    <aside id="banner-top">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </aside>
+    <header>
+        <img src="images/logo-cloudy.png" alt="logo cloudy website">
+        <h1>Cloudy Web</h1>
+        <span class="motto">The weather report, the fun way!</span>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" id="navBtn">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#" class="active">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="title-center">Report a Storm</h1>
+        <form method="GET" action="./thanks.html" class="report-form">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="fullName">Full Name*
+                    <input type="text" name="fullName" id="fullName" placeholder="William Meza" pattern="[A-Za-z]{5}*" required>
+                </label>
+                <label for="email">Email
+                    <input type="email" name="email" id="email" placeholder="user@email.com" minlength="3" maxlength="64" required>
+                </label>
+                <label for="phone">Phone Number*
+                    <input type="tel" name="phone" id="phone" placeholder="###-###-####" required>
+                </label>
+                <label for="zipCode">Zipcode*
+                    <input type="number" name="zipCode" id="zipCode" placeholder="#####" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Details</legend>
+                <label for="stormdate">Today's Date
+                    <input type="date" name="stormdate" id="stormdate" value="2020-06-11" min="2020-01-01" max="2100-01-01">
+                </label>
+                <label for="storm">Storm Type
+                    <input type="text" list="storms" name="storm" id="storm">
+                    <datalist id="storms">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunder Storm">
+                        <option value="Tornado">
+                    </datalist>
+                </label>
+                <label for="storming">Storm Severity
+                    <input type="range" name="storming" id="storming" min="0" max="10" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                </label> 
+                <span id="ratingvalue">1</span>
+                <label for="stormRegion">Storm Region
+                    <select name="stormRegion" id="stormRegion">
+                        <option value="" disabled selected>Select Region...</option>
+                        <option value="Preston"> Preston </option>
+                        <option value="Soda Springs"> Soda Springs </option>
+                        <option value="Fish Haven"> Fish Haven </option>
+                    </select> 
+                </label>
+            </fieldset>
+            <fieldset >
+                <legend>Additional Information</legend>
+                <p>In Danger Level</p>
+                <label for="inDangerLevel">
+                    <input type="radio" id="inDangerLevel" name="dangerLevel" value="Yes"> Yes
+                </label>
+                <label for="inDangerLevel2">
+                    <input type="radio" id="inDangerLevel2" name="dangerLevel" value="No"> No
+                </label>
+                <label for="inDangerLevel3">
+                    <input type="radio" id="inDangerLevel3" name="dangerLevel" value="Maybe"> Maybe
+                </label> 
+                <br>
+                <label for="comments"> Please share any additional information:
+                    <textarea id="comments" name="comment" rows="4" cols="50"></textarea>
+                </label>
+                <input class="btn btn-primary" type="submit" value="Report A Storm">
+            </fieldset>
+        </form>
+    </main>
+    <footer class="footer">
+      <p>
+          &copy; 2020 | William E. Meza | Colombia | <a href="https://byui.edu/" target="_blank">BYUI Online Learning</a>
+      </p>
+      <p class="last-update" id="currentDate"></p>
+    </footer>
+    <script src="js/last-modified.js" ></script>
+    <script src="js/responsive-menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Comfortaa', 'Kodchasan' ] 
+            }
+        });
+        function adjustRating(rating) {
+            document.getElementById("ratingvalue").innerHTML = rating;
+        }
+    </script>
+</body>
+
+</html>
