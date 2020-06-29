@@ -1,4 +1,4 @@
-const calWindChill = (temperature, speed) => {
+const windChill = (temperature, speed) => {
     return (temperature >= 50 && speed > 3) 
     ?
         Math.round(
@@ -16,6 +16,8 @@ const calWindChill = (temperature, speed) => {
         "N/A";
 }
 
+/* 
+
 const displayWindChill = () => {
     let temperature = Number(document.getElementById("temperature").textContent || 0);
     let wind = Number(document.getElementById("wind").textContent || 0);
@@ -23,4 +25,5 @@ const displayWindChill = () => {
     document.getElementById("chillWind").innerHTML = result;
 }
 
-displayWindChill();
+displayWindChill(); 
+*/

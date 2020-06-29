@@ -36,12 +36,11 @@
         <div class="banner-hero content-auto">
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p>Currently: Sunny</p>
-                <p>Temperature: <span id="temperature">50</span>°</p>
-                <p>Wind Chill: <span id="chillWind"></span>°F</p>
-                <p>Humidity: 67%</p>
-                <p>Precipitation: 58%</p>
-                <p>Wind Speed: <span id="wind">9</span>MPH</p>
+                <p>Current: <span id="currentTemp"></span>°F</p>
+                <p>High: <span id="highTemp"></span>°F</p>
+                <p>Windchill: <span id="windChill"></span>°F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windSpeed"></span> mph</p>
             </section>
             <picture>
               <source srcset="images/wdd230-image-franklin-small.jpg" media="(max-width: 550px)">
@@ -54,18 +53,18 @@
           <table id="forecast">
             <tbody>
               <tr>
-                <th>Friday</th>
-                <th>Saturday</th>
-                <th>Sunday</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
+                <th id="weekday1"></th>
+                <th id="weekday2"></th>
+                <th id="weekday3"></th>
+                <th id="weekday4"></th>
+                <th id="weekday5"></th>
               </tr>
               <tr>
-                <td id="fri"><img src="images/sun-icon.svg" alt="sun" width="60" height="60">76°F</td>
-                <td id="sat"><img src="images/sun-icon.svg" alt="sun" width="60" height="60">79°F</td>
-                <td id="sun"><img src="images/rain-icon.svg" alt="rain" width="60" height="60">80°F</td>
-                <td id="mon"><img src="images/partly-cloudy.svg" alt="partly cloudy" width="60" height="60">72°F</td>
-                <td id="tue"><img src="images/partly-cloudy.svg" alt="partially cloudy" width="60" height="60">71°F</td>
+                <td><img id="icon1" width="60" height="60"><span id="day1"></span></td>
+                <td><img id="icon2" width="60" height="60"><span id="day2"></span></td>
+                <td><img id="icon3" width="60" height="60"><span id="day3"></span></td>
+                <td><img id="icon4" width="60" height="60"><span id="day4"></span></td>
+                <td><img id="icon5" width="60" height="60"><span id="day5"></span></td>
               </tr>
             </tbody>
           </table>
@@ -112,5 +111,6 @@
         }
       });
     </script>
+    <script src="js/forecast.js"></script>
   </body>
 </html>
