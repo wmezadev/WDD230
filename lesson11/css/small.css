@@ -334,3 +334,7 @@ input[type="range"]{
     display: flex;
     justify-content: center;
 }
+
+.events{
+    border: dashed white 2px;
+}
