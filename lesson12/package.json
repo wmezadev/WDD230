@@ -1,0 +1,19 @@
+{
+  "name": "sass-compiler-activity",
+  "version": "1.0.0",
+  "description": "preproccesor excersise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "wemf",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.10"
+  }
+}
