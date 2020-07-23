@@ -1,0 +1,81 @@
+@media only screen and (min-width: 60em) {
+
+  h1 {
+    font-size: 8em;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .navigation {
+    display: flex;
+    font-size: 1.5rem;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+
+  .reserveButton {
+    font-size: 1.5em;
+  }
+
+  .homeInfoSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+
+  .infoImg {
+    width: 400px;
+  }
+
+  .card {
+    width: 400px;
+  }
+
+  .servicesDiv {
+    width: 40%;
+    font-size: 1.5rem;
+  }
+
+  .servicesDiv p {
+   padding-left: 30px;
+  }
+
+  th, td {
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+
+  form {
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .logo{
+    display: block;
+  }
+
+  nav {
+    width: unset;
+  }
+}

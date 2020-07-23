@@ -1,0 +1,85 @@
+@media only screen and (min-width: 32.5em) {
+
+  footer {
+    font-size: 1.2rem;
+  }
+
+  .social-icon {
+    margin: 10px;
+  }
+
+  .navigation {
+    display: flex;
+    font-size: 1.3rem;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .header-banner {
+    padding: 200px;
+  }
+
+  .infoImg {
+    width: 400px;
+  }
+
+  .card {
+    width: 400px;
+  }
+
+  .weatherSection {
+    font-size: 1.5rem;
+  }
+
+  .weatherSummary {
+    width: 75%;
+  }
+
+  /*rentals page*/
+
+  .rentalSection h3 {
+    padding-top: 50px;
+    font-size: 2rem;
+  }
+
+  .servicesDiv {
+    width: 80%;
+  }
+
+  .servicesDiv p {
+    padding-left: 10px;
+    font-size: 1.2rem;
+  }
+
+  table {
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .agreement {
+    font-size: 1rem;
+    width: 95%;
+  }
+
+  .logo{
+    display: block;
+  }
+
+  nav {
+    width: unset;
+  }
+  
+
+}

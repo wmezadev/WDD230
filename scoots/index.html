@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Scoots Rentals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Scoots Rentals Home Page">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <script src="js/forecast.js"></script>
+</head>
+<body>
+    <section class="nav-frame">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="images/logo.png" alt="logo"/>
+            </a>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a class="active" href="/scoots/index.html">Home</a></li>
+                <li><a href="/scoots/rentals.html">Rentals</a></li>
+                <li><a href="/scoots/reservations.html">Reservations</a></li>
+                <li><a href="/scoots/tours.html">Tours</a></li>
+                <li><a href="/scoots/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <div class="header-banner">
+            <h1>SCOOTS</h1>
+            <h2>Scooter Rentals on Cozumel</h2>
+        </div>
+    </header>
+    <main>
+        <section class="homeInfoSection">
+            <div class="card">
+                <img class="infoImg" src="images/austin-neill.jpg" alt="jeep image">
+                <div class="container">
+                    <h3><b>JEEPS</b></h3>
+                    <p>4-door Jeep Wrangler<br>manual with A/C <br>5 people max</p>
+                    <p>2-door Jeep Wrangler <br> open air <br>manual<br>4 people max</p>
+                    <a href="/scoots/reservations.html" class="button">MAKE A RESERVATION</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="infoImg" src="images/anastasiia-tarasova.jpg" alt="motor scooter">
+                <div class="container">
+                    <h3><b>MOTOR SCOOTERS</b></h3>
+                    <p>Honda Metropolitan (49cc)<br>1 person</p>
+                    <p>Honda Dio (110cc)<br> 2 person</p>
+                    <p>Honda PCS150 (149cc)<br>2 person</p>
+                    <a href="/scoots/reservations.html" class="button">MAKE A RESERVATION</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="infoImg" src="images/roberto-nickson.jpg" alt="ATV image">
+                <div class="container">
+                    <h3><b>ATV</b></h3>
+                    <p>Honda Pioneer 1000</p>
+                    <br><br><br><br><br><br><br>
+                </div>
+                <a href="/scoots/reservations.html" class="button">MAKE A RESERVATION</a>
+            </div>
+        </section>
+        <section class="weatherSection">
+            <div class="weatherSummary">
+                <h4>Today's Weather</h4>
+                <p>Temp: <span id="currentTemp"></span>°F</p>
+                <p>Condition: <span id="condition"></span></p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+            </div>
+
+            <div class="weatherSummary">
+                <h4>Weather in 5 Days</h4>
+                <p>Temp: <span id="forecastTemp"></span>°F</p>
+                <p>Condition: <span id="forecastCondition"></span></p>
+                <p>Humidity: <span id="forecastHumidity"></span>%</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; Scoots 2020 | Cozumel, Mexico | <a href="https://openweathermap.org/" class="link">openweathermap.org</a>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img class="social-icon" src="images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.twitter.com/"><img class="social-icon" src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.youtube.com/"><img class="social-icon" src="images/youtube.png" alt="youtube icon"></a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+</body>
+</html>

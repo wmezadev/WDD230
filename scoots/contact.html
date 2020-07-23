@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Scoots</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Scoots Rentals Home Page">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <script src="js/forecast.js"></script>
+</head>
+
+<body>
+    <section class="nav-frame">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="images/logo.png" alt="logo"/>
+            </a>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="/scoots/index.html">Home</a></li>
+                <li><a href="/scoots/rentals.html">Rentals</a></li>
+                <li><a href="/scoots/reservations.html">Reservations</a></li>
+                <li><a href="/scoots/tours.html">Tours</a></li>
+                <li><a class="active" href="/scoots/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <div class="header-banner">
+            <h1>SCOOTS</h1>
+            <h2>Scooter Rentals on Cozumel</h2>
+
+        </div>
+    </header>
+    <main>
+        <div class="contactDiv">
+            <h3 class="pageHeads">Contact Us</h3>
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <label class="top">
+                        <input type="text" name="completed date" placeholder="Your Name">
+                    </label>
+
+                    <label class="top">
+                        <input type=datalist" list="rentalType" placeholder="Your Email">
+                    </label>
+                    <label class="top">
+                        <textarea name="comments" rows="10" cols="40" placeholder="Your Comments"></textarea>
+                    </label>
+                    <input type="submit" value="Send Message" class="submitBtn">
+                </fieldset>
+            </form>
+        </div>
+        <div class="locationDiv">
+            <h3 class="pageHeads">Visit us in our place</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.962245789133!2d-86.9547311847879!3d20.507773886282838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59c559a7dc45%3A0x4a7ca31ed014108f!2sCalle%205%20Sur%2021-58%2C%20Centro%2C%2077600%20San%20Miguel%20de%20Cozumel%2C%20Q.R.%2C%20Mexico!5e0!3m2!1sen!2sco!4v1595481375029!5m2!1sen!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </main>
+    <footer>
+        &copy; Scoots 2020 | Cozumel, Mexico | <a href="https://openweathermap.org/" class="link">openweathermap.org</a>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img class="social-icon" src="images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.twitter.com/"><img class="social-icon" src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.youtube.com/"><img class="social-icon" src="images/youtube.png" alt="youtube icon"></a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src='js/main.js'></script>
+</body>
+
+</html>

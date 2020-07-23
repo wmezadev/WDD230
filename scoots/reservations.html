@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Scoots</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Scoots Rentals Home Page">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+    <script src="js/forecast.js"></script>
+</head>
+
+<body>
+    <section class="nav-frame">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="images/logo.png" alt="logo"/>
+            </a>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="/scoots/index.html">Home</a></li>
+                <li><a href="/scoots/rentals.html">Rentals</a></li>
+                <li><a class="active" href="/scoots/reservations.html">Reservations</a></li>
+                <li><a href="/scoots/tours.html">Tours</a></li>
+                <li><a href="/scoots/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+    <header>
+        <div class="header-banner">
+            <h1>SCOOTS</h1>
+            <h3>Scooter Rentals on Cozumel</h3>
+        </div>
+    </header>
+    <main>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Rental Information</legend>
+                <label class="top"> Date of Rental
+                    <input type="date" name="completed date" required>
+                </label>
+
+                <label class="top">Rental Type
+                    <input list="rentalType" required>
+                </label>
+                <datalist id="rentalType">
+                    <option value="Honda Metro Scooter">
+                    <option value="Honda Dio Scooter">
+                    <option value="Honda PCS150 Scooter">
+                    <option value="Honda Pioneer ATV">
+                    <option value="Jeep Wrangler - 4 Door">
+                    <option value="Jeep Wrangler - 2 Door">
+                </datalist>
+                <label class="top">
+                    Rental Amount<input type="number" name="zip" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">
+                    Full Name <input type="text" name="fname" required>
+                </label>
+                <label class="top">
+                    Email<input type="email" name="email" placeholder="someone@gmail.com" required>
+                </label>
+                <label class="top">
+                    Phone Number<input type="tel" name="phone" required>
+                </label>
+                <label class="top">
+                    Zip Code<input type="number" name="zip">
+                </label>
+                <label class="top">Home State
+                    <input list="homeState">
+                </label>
+                <datalist id="homeState">
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA">California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District Of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY">Wyoming</option>
+                </datalist>
+                <label class="top">Cruise Line
+                    <input list="cruiseType" placeholder="If Applicable">
+                </label>
+                <datalist id="cruiseType">
+                    <option value="Carnival">
+                    <option value="Celebrity">
+                    <option value="Crystal">
+                    <option value="Disney">
+                    <option value="Holland America">
+                    <option value="Norwegian">
+                    <option value="Princess">
+                    <option value="Regent Seven Seas">
+                </datalist>
+            </fieldset>
+            <fieldset class="agreement">
+                <legend>Rental Agreement</legend>
+                1. I understand dangers may be caused by my own actions or inactions, the actions or inactions of others
+                participating in the activity, and the condition. I understnad the nature of SCOOTS activites and
+                acknowledge my experience and capabilites and believe I am qualified to participate in such activity. I
+                further acknowledge that I am aware that the activity will be conducted in facitilites open to the
+                public during the activity. I further agree and warrant that if, at any time, I believe conditions to be
+                unsafe, I will immediately discontinue further participation in the activity.
+                <br>
+                2. I fully understand that: a) SCOOTS activiites involve risks and dangers of serious bodily injury,
+                including permanent disability, paralysis and death; b) these risks in which the activity takes place or
+                the negligence of the relases; c) there may be other risks and social and economic losses either not
+                known to me or not readily foreseeable at this time; and I fully accept and assume all suich risks and
+                responsiblity of losses, costs and damages incurred as a result of my participation in the activity.
+                <br>
+                3. I hereby release, discharge, covenant not to sue and agree to hold harmless SCOOTS, their respective
+                administrators, directors, agents, officers, volunteers and employees, other participants, any sponsors,
+                advertisers, and if applicable, owners and lessors of the premises on which the activity takes place
+                from all liability, claims, losses or damages on account caused or alleged to be cause in whole or in
+                part by the neglicence of the "releases" or otherwise, including negligent rescue operations and further
+                agree that if, despite this release, I, or anyone on my behalf makes a claim against any of the
+                "releasees" named above, "I WILL ENDEMNIFY. SAVE AND HOLD HARMLESS EACH OF THE RELEASEES FROM ANY
+                LITIGATION, EXPENSES, ATTORNEY FEES, LOSS LIABILITY, DAMAGE OR COST MAY INCUR AS THE RESULT OF ANY SUCH
+                CLAIM."
+
+                <br><br><br>
+                I have read this agreement, fully and understand and its terms, understand that I have given up
+                substantial rights by signing it and have signed it freely and without any inducement or assurance of
+                any nature and inted it to be a complete and unconditional release of all liability to the greatest
+                extend allowed by the law and agree that it any portion of this agreement is held to be invalid that the
+                balance, notwithstnading. shall continue in full force and effect.
+                <br><br>
+                I Agree <input type="checkbox">
+                <br><br><br>
+                Comments and Special Accomodations:
+                <label class="top">
+                    <textarea name="comments" rows="10" cols="45"></textarea>
+                </label>
+            </fieldset>
+            <button type="submit" class="button">
+               Submit reservation
+            </button>
+        </form>
+    </main>
+    <footer>
+        &copy; Scoots 2020 | Cozumel, Mexico | <a href="https://openweathermap.org/" class="link">openweathermap.org</a>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img class="social-icon" src="images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/"><img class="social-icon" src="images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.twitter.com/"><img class="social-icon" src="images/twitter.png" alt="twitter icon"></a>
+            <a href="https://www.youtube.com/"><img class="social-icon" src="images/youtube.png" alt="youtube icon"></a>
+        </div>
+    </footer>
+    <script src="js/hamburger.js"></script>
+    <script src='js/main.js'></script>
+</body>
+
+</html>
